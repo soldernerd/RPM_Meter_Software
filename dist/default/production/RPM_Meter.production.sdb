@@ -1,0 +1,551 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"43 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"37 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\display.c
+[v _display_init display_init `(v  1 e 1 0 ]
+"63
+[v _display_set display_set `(v  1 e 1 0 ]
+"126
+[v _display_isr display_isr `T(v  1 e 1 0 ]
+"157
+[v _display_startup display_startup `(v  1 e 1 0 ]
+"8 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\encoder.c
+[v _encoder_init encoder_init `(v  1 e 1 0 ]
+"51
+[v _timer_1_isr timer_1_isr `T(v  1 e 1 0 ]
+"92
+[v _capture_A_isr capture_A_isr `T(v  1 e 1 0 ]
+"156
+[v _capture_B_isr capture_B_isr `T(v  1 e 1 0 ]
+"26 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\main.c
+[v _main main `(v  1 e 1 0 ]
+"47
+[v __isr _isr `II(v  1 e 1 0 ]
+"74
+[v __system_init _system_init `(v  1 s 1 _system_init ]
+"104
+[v __calculate_speed _calculate_speed `(v  1 s 1 _calculate_speed ]
+[s S22 . 18 `VEs 1 encoder 2 0 `VEs 1 encoder_last 2 2 `VEs 1 encoder_difference 2 4 `VEuc 1 capture 1 6 `VEuc 1 ready 1 7 `VEul 1 time_sum_last 4 8 `VEul 1 time_sum 4 12 `s 1 speed 2 16 ]
+"142 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter/config.h
+[v _os os `VES22  1 e 18 0 ]
+[s S371 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"364 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18855.h
+[u S376 . 1 `S371 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES376  1 e 1 @11 ]
+[s S817 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"463
+[u S826 . 1 `S817 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES826  1 e 1 @13 ]
+[s S122 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"608
+[u S131 . 1 `S122 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES131  1 e 1 @17 ]
+[s S143 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"670
+[u S152 . 1 `S143 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES152  1 e 1 @18 ]
+[s S101 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"732
+[u S110 . 1 `S101 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES110  1 e 1 @19 ]
+[s S401 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"794
+[u S410 . 1 `S401 1 . 1 0 ]
+[v _LATAbits LATAbits `VES410  1 e 1 @22 ]
+[s S422 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"856
+[u S431 . 1 `S422 1 . 1 0 ]
+[v _LATBbits LATBbits `VES431  1 e 1 @23 ]
+"901
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+[s S539 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS 1 0 :2:4 
+]
+"6562
+[s S545 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S552 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+]
+[s S556 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD161 1 0 :1:1 
+]
+[u S559 . 1 `S539 1 . 1 0 `S545 1 . 1 0 `S552 1 . 1 0 `S556 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES559  1 e 1 @526 ]
+[s S280 . 1 `uc 1 CS 1 0 :4:0 
+]
+"7016
+[s S512 . 1 `uc 1 T1CS0 1 0 :1:0 
+`uc 1 T1CS1 1 0 :1:1 
+`uc 1 T1CS2 1 0 :1:2 
+`uc 1 T1CS3 1 0 :1:3 
+]
+[s S282 . 1 `uc 1 CS0 1 0 :1:0 
+`uc 1 CS1 1 0 :1:1 
+`uc 1 CS2 1 0 :1:2 
+`uc 1 CS3 1 0 :1:3 
+]
+[u S522 . 1 `S280 1 . 1 0 `S512 1 . 1 0 `S282 1 . 1 0 ]
+[v _T1CLKbits T1CLKbits `VES522  1 e 1 @529 ]
+"9126
+[v _PR2 PR2 `VEuc  1 e 1 @653 ]
+[s S314 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"9195
+[s S318 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S322 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+]
+[s S330 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S339 . 1 `S314 1 . 1 0 `S318 1 . 1 0 `S322 1 . 1 0 `S330 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES339  1 e 1 @654 ]
+"9463
+[s S287 . 1 `uc 1 T2CS 1 0 :4:0 
+]
+[s S289 . 1 `uc 1 T2CS0 1 0 :1:0 
+`uc 1 T2CS1 1 0 :1:1 
+`uc 1 T2CS2 1 0 :1:2 
+`uc 1 T2CS3 1 0 :1:3 
+]
+[u S294 . 1 `S280 1 . 1 0 `S282 1 . 1 0 `S287 1 . 1 0 `S289 1 . 1 0 ]
+[v _T2CLKCONbits T2CLKCONbits `VES294  1 e 1 @656 ]
+"10890
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @780 ]
+"10910
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @781 ]
+[s S603 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 FMT 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 OE 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"10968
+[s S609 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+]
+[s S614 . 1 `uc 1 CCP1MODE 1 0 :4:0 
+`uc 1 CCP1FMT 1 0 :1:4 
+`uc 1 CCP1OUT 1 0 :1:5 
+`uc 1 CCP1OE 1 0 :1:6 
+`uc 1 CCP1EN 1 0 :1:7 
+]
+[s S620 . 1 `uc 1 CCP1MODE0 1 0 :1:0 
+`uc 1 CCP1MODE1 1 0 :1:1 
+`uc 1 CCP1MODE2 1 0 :1:2 
+`uc 1 CCP1MODE3 1 0 :1:3 
+]
+[s S625 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 P1M0 1 0 :1:6 
+`uc 1 P1M1 1 0 :1:7 
+]
+[u S629 . 1 `S603 1 . 1 0 `S609 1 . 1 0 `S614 1 . 1 0 `S620 1 . 1 0 `S625 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES629  1 e 1 @782 ]
+[s S662 . 1 `uc 1 CTS 1 0 :8:0 
+]
+"11096
+[s S664 . 1 `uc 1 CTS0 1 0 :1:0 
+`uc 1 CTS1 1 0 :1:1 
+`uc 1 CTS2 1 0 :1:2 
+]
+[s S668 . 1 `uc 1 CCP1CTS 1 0 :8:0 
+]
+[s S670 . 1 `uc 1 CCP1CTS0 1 0 :1:0 
+`uc 1 CCP1CTS1 1 0 :1:1 
+`uc 1 CCP1CTS2 1 0 :1:2 
+]
+[u S674 . 1 `S662 1 . 1 0 `S664 1 . 1 0 `S668 1 . 1 0 `S670 1 . 1 0 ]
+[v _CCP1CAPbits CCP1CAPbits `VES674  1 e 1 @783 ]
+"11148
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @784 ]
+"11168
+[v _CCPR2H CCPR2H `VEuc  1 e 1 @785 ]
+"11226
+[s S703 . 1 `uc 1 CCP2MODE 1 0 :4:0 
+`uc 1 CCP2FMT 1 0 :1:4 
+`uc 1 CCP2OUT 1 0 :1:5 
+`uc 1 CCP2OE 1 0 :1:6 
+`uc 1 CCP2EN 1 0 :1:7 
+]
+[s S709 . 1 `uc 1 CCP2MODE0 1 0 :1:0 
+`uc 1 CCP2MODE1 1 0 :1:1 
+`uc 1 CCP2MODE2 1 0 :1:2 
+`uc 1 CCP2MODE3 1 0 :1:3 
+]
+[s S714 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 P2M0 1 0 :1:6 
+`uc 1 P2M1 1 0 :1:7 
+]
+[u S718 . 1 `S603 1 . 1 0 `S609 1 . 1 0 `S703 1 . 1 0 `S709 1 . 1 0 `S714 1 . 1 0 ]
+[v _CCP2CONbits CCP2CONbits `VES718  1 e 1 @786 ]
+"11354
+[s S757 . 1 `uc 1 CCP2CTS 1 0 :8:0 
+]
+[s S759 . 1 `uc 1 CCP2CTS0 1 0 :1:0 
+`uc 1 CCP2CTS1 1 0 :1:1 
+`uc 1 CCP2CTS2 1 0 :1:2 
+]
+[u S763 . 1 `S662 1 . 1 0 `S664 1 . 1 0 `S757 1 . 1 0 `S759 1 . 1 0 ]
+[v _CCP2CAPbits CCP2CAPbits `VES763  1 e 1 @787 ]
+[s S49 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR6IF 1 0 :1:5 
+]
+"21315
+[u S56 . 1 `S49 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES56  1 e 1 @1808 ]
+[s S71 . 1 `uc 1 CCP1IF 1 0 :1:0 
+`uc 1 CCP2IF 1 0 :1:1 
+`uc 1 CCP3IF 1 0 :1:2 
+`uc 1 CCP4IF 1 0 :1:3 
+`uc 1 CCP5IF 1 0 :1:4 
+]
+"21421
+[u S77 . 1 `S71 1 . 1 0 ]
+[v _PIR6bits PIR6bits `VES77  1 e 1 @1810 ]
+[s S384 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 TMR3IE 1 0 :1:2 
+`uc 1 TMR4IE 1 0 :1:3 
+`uc 1 TMR5IE 1 0 :1:4 
+`uc 1 TMR6IE 1 0 :1:5 
+]
+"21737
+[u S391 . 1 `S384 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES391  1 e 1 @1818 ]
+[s S790 . 1 `uc 1 CCP1IE 1 0 :1:0 
+`uc 1 CCP2IE 1 0 :1:1 
+`uc 1 CCP3IE 1 0 :1:2 
+`uc 1 CCP4IE 1 0 :1:3 
+`uc 1 CCP5IE 1 0 :1:4 
+]
+"21843
+[u S796 . 1 `S790 1 . 1 0 ]
+[v _PIE6bits PIE6bits `VES796  1 e 1 @1820 ]
+"29779
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3727 ]
+[s S186 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"29789
+[u S188 . 1 `S186 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES188  1 e 1 @3727 ]
+"30359
+[v _CCP1PPS CCP1PPS `VEuc  1 e 1 @3745 ]
+"30411
+[v _CCP2PPS CCP2PPS `VEuc  1 e 1 @3746 ]
+[s S164 . 1 `uc 1 ANSB0 1 0 :1:0 
+`uc 1 ANSB1 1 0 :1:1 
+`uc 1 ANSB2 1 0 :1:2 
+`uc 1 ANSB3 1 0 :1:3 
+`uc 1 ANSB4 1 0 :1:4 
+`uc 1 ANSB5 1 0 :1:5 
+`uc 1 ANSB6 1 0 :1:6 
+`uc 1 ANSB7 1 0 :1:7 
+]
+"33644
+[u S173 . 1 `S164 1 . 1 0 ]
+"33644
+"33644
+[v _ANSELBbits ANSELBbits `VES173  1 e 1 @3907 ]
+"33 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\display.c
+[v _char_lookup char_lookup `[10]uc  1 s 10 char_lookup ]
+"34
+[v _characters characters `[4]uc  1 e 4 0 ]
+"35
+[v _segment segment `VEuc  1 e 1 0 ]
+"5 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\encoder.c
+[v _time time `ul  1 e 4 0 ]
+"6
+[v _rollover_cnt rollover_cnt `uc  1 e 1 0 ]
+"26 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"44
+} 0
+"157 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\display.c
+[v _display_startup display_startup `(v  1 e 1 0 ]
+{
+"163
+[v display_startup@tmp tmp `[12]uc  1 a 12 2 ]
+"161
+[v display_startup@cntr cntr `us  1 a 2 0 ]
+"160
+[v display_startup@position position `uc  1 a 1 15 ]
+"159
+[v display_startup@last_value last_value `uc  1 a 1 14 ]
+"195
+} 0
+"63
+[v _display_set display_set `(v  1 e 1 0 ]
+{
+"66
+[v display_set@temp_chars temp_chars `[4]uc  1 a 4 8 ]
+"65
+[v display_set@abs_value abs_value `us  1 a 2 12 ]
+"63
+[v display_set@value value `s  1 p 2 3 ]
+[v display_set@decimal_flags decimal_flags `uc  1 p 1 5 ]
+"124
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 0 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 4 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 6 ]
+"25
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 0 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 2 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 4 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 6 ]
+"30
+} 0
+"74 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\main.c
+[v __system_init _system_init `(v  1 s 1 _system_init ]
+{
+"102
+} 0
+"8 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\encoder.c
+[v _encoder_init encoder_init `(v  1 e 1 0 ]
+{
+"49
+} 0
+"37 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\display.c
+[v _display_init display_init `(v  1 e 1 0 ]
+{
+"61
+} 0
+"104 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\main.c
+[v __calculate_speed _calculate_speed `(v  1 s 1 _calculate_speed ]
+{
+"108
+[v __calculate_speed@speed speed `f  1 a 4 52 ]
+"107
+[v __calculate_speed@time_difference time_difference `ul  1 a 4 48 ]
+"106
+[v __calculate_speed@distance distance `l  1 a 4 44 ]
+"130
+} 0
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 6 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 5 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 4 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 4 ]
+"44
+} 0
+"43 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 6 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 5 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 4 ]
+"70
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S1134 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S1139 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S1142 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1134 1 fAsBytes 4 0 `S1139 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1142  1 a 4 25 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 19 ]
+[s S1211 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S1214 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1211 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1214  1 a 2 29 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 24 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 23 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 18 ]
+"8
+[v ___flmul@b b `d  1 p 4 5 ]
+[v ___flmul@a a `d  1 p 4 9 ]
+"205
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 2 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 0 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 4 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 4 ]
+"60
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 30 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 23 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 28 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 35 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 34 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 27 ]
+"8
+[v ___fldiv@a a `d  1 p 4 10 ]
+[v ___fldiv@b b `d  1 p 4 14 ]
+"185
+} 0
+"47 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\main.c
+[v __isr _isr `II(v  1 e 1 0 ]
+{
+"72
+} 0
+"51 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\encoder.c
+[v _timer_1_isr timer_1_isr `T(v  1 e 1 0 ]
+{
+"90
+} 0
+"126 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\display.c
+[v _display_isr display_isr `T(v  1 e 1 0 ]
+{
+"155
+} 0
+"156 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\RPM_Meter\encoder.c
+[v _capture_B_isr capture_B_isr `T(v  1 e 1 0 ]
+{
+"217
+} 0
+"92
+[v _capture_A_isr capture_A_isr `T(v  1 e 1 0 ]
+{
+"153
+} 0
